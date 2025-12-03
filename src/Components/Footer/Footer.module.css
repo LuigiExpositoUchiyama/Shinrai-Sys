@@ -1,0 +1,37 @@
+.footer {
+  padding: 30px 0 15px 0;
+  background-color: var(--color-1);
+  text-align: center;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 0.75rem;
+}
+
+.footerIcon {
+  font-size: 1.4rem;
+  color: var(--color-3);
+  transition: 0.25s ease;
+}
+
+.footerIcon:hover {
+  color: var(--color-4);
+  transform: translateY(-3px);
+}
+
+.footerText {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  color: var(--color-3);
+  font-family: 'Font4';
+}
+
+.brand {
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--color-4), var(--color-7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

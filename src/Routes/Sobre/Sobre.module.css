@@ -1,0 +1,154 @@
+.capa {
+  min-height: 100vh;
+  background: var(--color-1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 90px 1.5rem 70px;
+}
+
+.capa::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 18%;
+  right: 10%;
+  background-image: url("/enso.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.capa::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  left: 0;
+  top: 88%;
+  background: var(--color-4);
+  opacity: 0.7;
+}
+
+.sectionTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+  color: var(--color-4);
+}
+
+.capaTitle {
+  font-size: 2.6rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 700;
+  color: var(--color-3);
+}
+
+.capaLead {
+  max-width: 720px;
+  margin: 1.5rem auto 0;
+  font-size: 1rem;
+  opacity: 0.95;
+  color: var(--color-3);
+  line-height: 1.6;
+}
+
+.section {
+  padding: 90px 1.5rem;
+  background-color: var(--color-1);
+}
+
+.trustCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 2.4rem;
+  background: var(--color-1);
+  border-radius: 18px;
+  border: 1px solid var(--color-6);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+}
+
+.trustHeading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--color-3);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.trustText {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: var(--color-3);
+  margin-bottom: 1rem;
+}
+
+.listCheck {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listCheck li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--color-3);
+  font-size: 1rem;
+}
+
+.listCheck li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-4);
+  font-weight: 600;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+  color: var(--color-3);
+}
+
+@media (max-width: 768px) {
+  .capaTitle {
+    font-size: 2.1rem;
+  }
+
+  .trustCard {
+    padding: 1.8rem 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .capa {
+    padding: 70px 1rem 40px;
+  }
+
+  .capaTitle {
+    font-size: 1.8rem;
+  }
+
+  .capa::before {
+    width: 170px;
+    height: 170px;
+    right: -10%;
+  }
+
+  .trustCard {
+    padding: 1.6rem 1.4rem;
+  }
+}

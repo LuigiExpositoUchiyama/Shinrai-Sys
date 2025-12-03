@@ -1,0 +1,48 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.errorContent {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.errorCode {
+  font-size: 6rem;
+  color: var(--color-4);
+  margin-bottom: 20px;
+}
+
+.errorMessage {
+  font-size: 2rem;
+  color: var(--color-3);
+  margin-bottom: 10px;
+}
+
+.errorDescription {
+  font-size: 1.25rem;
+  color: var(--color-3);
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 1.125rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--color-4), var(--color-3));
+  border: none;
+  color: #fff;
+  font-family: 'Font4';
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 15px;
+}
+
+.button:hover {
+  filter: brightness(1.05);
+}

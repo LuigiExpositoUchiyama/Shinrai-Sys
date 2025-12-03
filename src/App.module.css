@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: 'Font1'; 
+  src: url('./fonts/TropiLand-L3MPg.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Font2'; 
+  src: url('./fonts/minagi-bristone.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Font3'; 
+  src: url('./fonts/Poppins-Bold.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'Font4'; 
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype'); 
+}
+
+:root {
+  --color-1: #ffffff;   /* branco */
+  --color-2: #f5f5f7;   /* cinza bem claro */
+  --color-3: #313238;   /* grafite escuro */
+  --color-4: #A92325;   /* vermelho */
+  --color-5: #FBE9EA;   /* vermelho claro */
+  --color-6: #C89A3C;   /* dourado */
+  --color-7: #243447;   /* azul escuro */
+}
+
+body {
+  background: var(--color-1);
+  overflow-x: hidden;
+  font-family: 'Font4', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BOTÕES GLOBAIS (CSS Modules + :global) ===== */
+
+:global(.btnDark) {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 1.125rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--color-4), var(--color-3));
+  border: none;
+  color: #fff;
+  font-family: 'Font4';
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 15px;
+}
+
+:global(.btnDark:hover) {
+  filter: brightness(1.05);
+}
+
+:global(.btnOutlineDark) {
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 1.125rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-4);
+  color: var(--color-4);
+  background: transparent;
+  font-family: 'Font4';
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 15px;
+}
+
+:global(.btnOutlineDark:hover) {
+  background-color: var(--color-5);
+  color: var(--color-4);
+}
