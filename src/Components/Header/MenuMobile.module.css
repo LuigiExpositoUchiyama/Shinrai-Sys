@@ -92,10 +92,10 @@
 /* Ajuste adicional para telas menores */
 @media (max-width: 480px) {
   .menuFechado {
-    top: 100px;
+    top: 60px;
   }
 
   .menuAberto {
-    height: 120px;
+    height: 240px;
   }
 }

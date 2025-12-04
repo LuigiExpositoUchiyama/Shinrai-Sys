@@ -25,11 +25,11 @@
 .capa::after {
   content: "";
   position: absolute;
-  width: 50%; 
-  height: 1px;     
-  left: 0;       
-  top: 85%;        
-  background: var(--color-4); 
+  width: 50%;
+  height: 1px;
+  left: 0;
+  top: 85%;
+  background: var(--color-4);
   border-radius: 4px;
 }
 
@@ -82,8 +82,6 @@
 .mb5 {
   margin-bottom: 1.5rem;
 }
-
-/* GRID DE CARDS (AUTÔNOMOS / CLÍNICAS) */
 
 .trustGrid {
   max-width: 1200px;
@@ -140,8 +138,6 @@
   margin-top: 30px;
 }
 
-/* OUTROS SISTEMAS */
-
 .futureGrid {
   max-width: 1200px;
   margin: 0 auto;
@@ -187,16 +183,12 @@
   color: var(--color-3);
 }
 
-/* CTA FINAL */
-
 .ctaWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-
-/* RESPONSIVO */
 
 @media (max-width: 768px) {
   .tituloCapa {
@@ -224,5 +216,21 @@
   .capa::before {
     width: 170px;
     height: 170px;
+  }
+
+  .trustGrid,
+  .futureGrid {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .trustBox,
+  .futureCard {
+    max-width: 300px;
+    flex: 1 1 300px;
+  }
+
+  .sectionText {
+    max-width: 300px;
   }
 }

@@ -50,6 +50,7 @@
   margin: 0 auto;
   font-weight: 700;
   color: var(--color-3);
+  line-height: 1.25;
 }
 
 .capaLead {
@@ -170,8 +171,13 @@
   .capaTitle {
     font-size: 2.1rem;
   }
+
   .section {
     padding: 70px 1.25rem;
+  }
+
+  .postCard {
+    padding: 1.6rem 1.6rem;
   }
 }
 
@@ -179,12 +185,40 @@
   .capa {
     padding: 70px 1rem 40px;
   }
+
   .capaTitle {
     font-size: 1.8rem;
   }
+
+  .capaLead {
+    max-width: 300px;
+  }
+
   .capa::before {
     width: 170px;
     height: 170px;
     right: -10%;
+  }
+
+  .section {
+    padding: 60px 1rem;
+  }
+
+  .postsGrid {
+    max-width: 300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .postCard {
+    padding: 1.4rem 1.4rem;
+    border-radius: 16px;
+  }
+
+  .categoryList {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
